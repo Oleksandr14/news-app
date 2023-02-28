@@ -16,8 +16,6 @@ const NewsList: React.FC = () => {
         fetchNews(page).then(data => setNews(p => [...p, ...data]))
     }, [page])
 
-    console.log(news)
-
     const loadMore = () => {
         setPage(p => p + 1);
       };

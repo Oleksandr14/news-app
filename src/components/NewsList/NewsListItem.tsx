@@ -1,8 +1,15 @@
 import { Button, Card, CardActions, CardContent, CardMedia, Grid, Typography } from '@mui/material';
 
-import { IItem } from '../../types/types';
+import { INewsListItemProps } from '../../types/types';
 
-const NewsListItem: React.FC<IItem> = ({title, thumbnailUrl}) => {
+const NewsListItem: React.FC<INewsListItemProps> = ({title, thumbnailUrl, id, deleteNews}) => {
+
+   const handleDelete = () => {
+    if (window.confirm('Are you sure you want to delete this item?')) {
+      deleteNews(id);
+    }
+  };
+
     return (
         <Grid item xs md={3}>
         <Card sx={{height:'100%'}}>
@@ -10,9 +17,11 @@ const NewsListItem: React.FC<IItem> = ({title, thumbnailUrl}) => {
             <CardContent>
                 <Typography color="inherit" variant='h6' component="h3">{title}</Typography> 
             </CardContent>
-            <CardActions>
-                <Button variant='contained' >Delete</Button>
-            </CardActions>
+            {handleDelete && (
+          <CardActions>
+            <Button variant='contained' onClick={handleDelete}>Delete</Button>
+          </CardActions>
+        )}
         </Card>
         </Grid>
     );

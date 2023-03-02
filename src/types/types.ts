@@ -1,6 +1,17 @@
 export interface IItem {
-    id?: number, 
+    id: number, 
     title: string, 
-    thumbnailUrl: string
+    thumbnailUrl: string, 
 }
 
+export interface INewsListItemProps extends IItem {
+    deleteNews: (id: number) => void;
+  }
+
+export interface IIsLogin {
+    initialState:{
+      isAutheticated: boolean
+    }
+  }
+
+ 

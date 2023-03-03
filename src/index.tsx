@@ -18,7 +18,7 @@ const root = ReactDOM.createRoot(
 );
 root.render(
     <Provider store={store}>
-    <BrowserRouter >
+    <BrowserRouter basename="/news-app/">
     <ThemeProvider theme={theme}>
       
     <Suspense fallback={<div>Loading...</div>}>

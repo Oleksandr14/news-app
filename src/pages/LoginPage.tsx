@@ -1,9 +1,9 @@
 import FormLogin from "../components/FormLogin/FormLogin";
 
-const LoginPage = () => {
+const LoginPage: React.FC = () => {
     return (
         <>
-            <FormLogin/>
+        <FormLogin/>
         </>
     );
 };

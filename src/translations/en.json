@@ -1,0 +1,21 @@
+{
+    "menu.home": "Home",
+    "menu.news": "News",
+    "menu.profile": "Profile",
+    "menu.login": "Log in",
+    "menu.logout": "Log out",
+    "login.username": "Username",
+    "login.password": "Password",
+    "login.submit": "Log in",
+    "login.error": "Invalid username or password.",
+    "form.title": "Log in to News App",
+    "news.remove": "Delete",
+    "news.warning": "Are you sure you want to delete this item?",
+    "home.title": " Hello!",
+    "home.1": " This is the main page of our website.",
+    "home.2": " Here you will find the latest news from all over the world, as well as a lot of interesting content on various topics.",
+    "home.3": " If you want to be up to date on the latest events, go to the news page and find out more about what is happening in the world.",
+    "home.4": " We also offer you to register.",
+    "home.5": " Visit our site more often and be always aware of the latest events!"
+  }
+  

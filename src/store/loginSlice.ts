@@ -10,7 +10,6 @@ const initialState: AuthenticationState = {
     isAutheticated: !!localStorage.getItem('isAutheticated'),
     userName: '',
     password: ''
-
 }
 
 const loginSlice = createSlice({

@@ -1,11 +1,14 @@
 import { Route, Routes } from "react-router-dom";
+import { lazy, LazyExoticComponent } from 'react';
 
 import SharedLayout from "./SharedLayout/SharedLayout";
 
-import HomePage from "../pages/HomePage";
-import NewsPage from "../pages/NewsPage";
-import ProfilePage from "../pages/ProfilePage";
-import LoginPage from "../pages/LoginPage";
+type ComponentType = LazyExoticComponent<React.FC>;
+
+const HomePage: ComponentType = lazy(()=>import('../pages/HomePage'))
+const NewsPage: ComponentType = lazy(()=>import('../pages/NewsPage'))
+const ProfilePage: ComponentType = lazy(()=>import('../pages/ProfilePage') )
+const LoginPage: ComponentType = lazy(()=>import('../pages/LoginPage'))
 
 const App: React.FC = () => {
   return (
@@ -23,3 +26,4 @@ const App: React.FC = () => {
 }
 
 export default App;
+

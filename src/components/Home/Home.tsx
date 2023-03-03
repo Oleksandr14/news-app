@@ -1,31 +1,33 @@
-import React from 'react';
+import { useTranslation } from 'react-i18next';
+
 import Typography from '@mui/material/Typography';
 
 const Home: React.FC = () => {
+
+  const { t } = useTranslation();
+
   return (
     <div>
-      <Typography variant="h1">Hello!</Typography>
-      <Typography variant="body1">
-      This is the main page of our website.
+      <Typography variant="h1" sx={{ marginBottom: '1rem', textAlign: 'center' }}>
+        {t("home.title")}
       </Typography>
-      <Typography variant="body1">
-      Here you will find the latest news from all over the world, as well as a lot of interesting content on various topics.
+      <Typography variant="body1" sx={{ marginBottom: '1rem' }}>
+      {t("home.1")}
       </Typography>
-      <Typography variant="body1">
-      If you want to be up to date on the latest events, go to the news page and find out more about what is happening in the world.
-</Typography>
-<Typography variant="body1">
-If you want to share your thoughts and ideas, contact us and we are happy to publish your article on our site.
-</Typography>
-<Typography variant="body1">
-We also offer you to register.
-</Typography>
-<Typography variant="body1">
-Visit our site more often and be always aware of the latest events!
-</Typography>
-</div>
-);
+      <Typography variant="body1" sx={{ marginBottom: '1rem' }}>
+      {t("home.2")}
+      </Typography>
+      <Typography variant="body1" sx={{ marginBottom: '1rem' }}>
+      {t("home.3")}
+      </Typography>
+      <Typography variant="body1" sx={{ marginBottom: '1rem' }}>
+      {t("home.4")}
+      </Typography>
+      <Typography variant="body1" sx={{ marginBottom: '1rem' }}>
+      {t("home.5")}
+      </Typography>
+    </div>
+  );
 };
 
 export default Home;
-

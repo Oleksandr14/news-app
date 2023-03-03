@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/news-app/static/js/main.a3b0ab69.js",
+    "main.js": "/news-app/static/js/main.5ee5958a.js",
     "static/js/204.2b811c0e.chunk.js": "/news-app/static/js/204.2b811c0e.chunk.js",
     "static/js/128.e83f74fa.chunk.js": "/news-app/static/js/128.e83f74fa.chunk.js",
     "static/js/726.a9604475.chunk.js": "/news-app/static/js/726.a9604475.chunk.js",
@@ -9,7 +9,7 @@
     "static/js/644.baefcf3b.chunk.js": "/news-app/static/js/644.baefcf3b.chunk.js",
     "index.html": "/news-app/index.html",
     "static/media/getFetch.cjs": "/news-app/static/media/getFetch.40f37ddea2378391108f.cjs",
-    "main.a3b0ab69.js.map": "/news-app/static/js/main.a3b0ab69.js.map",
+    "main.5ee5958a.js.map": "/news-app/static/js/main.5ee5958a.js.map",
     "204.2b811c0e.chunk.js.map": "/news-app/static/js/204.2b811c0e.chunk.js.map",
     "128.e83f74fa.chunk.js.map": "/news-app/static/js/128.e83f74fa.chunk.js.map",
     "726.a9604475.chunk.js.map": "/news-app/static/js/726.a9604475.chunk.js.map",
@@ -18,6 +18,6 @@
     "644.baefcf3b.chunk.js.map": "/news-app/static/js/644.baefcf3b.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.a3b0ab69.js"
+    "static/js/main.5ee5958a.js"
   ]
 }
